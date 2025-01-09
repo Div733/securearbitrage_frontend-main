@@ -1,0 +1,120 @@
+.home-heading {
+    position: relative;
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    color: white; /* Text color on the background image */
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    background: url('./oppertuinity.png') no-repeat center center; /* Background image */
+    background-size: cover;
+    border-radius: 0px; /* No rounded corners */
+    opacity: 0.9; /* Slight transparency for the background */
+    overflow: hidden;
+    height: 250px; /* Adjusted height */
+    flex-direction: column; /* Stack text and paragraph vertically */
+  }
+  
+  .home-heading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+    z-index: 1;
+  }
+  
+  .home-heading span {
+    position: relative;
+    z-index: 2; /* Ensure text is above the overlay */
+  }
+
+
+  .drawer-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .drawer-backdrop.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .drawer {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100%;
+    width: 300px;
+    background-color: #121212;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.7);
+    z-index: 1100;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: left 0.3s ease; 
+  }
+  
+  .drawer.active {
+    left: 0; /* Move into view */
+  }
+  
+  .close-drawer-btn {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .drawer ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .drawer ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: left;
+  }
+  
+  .drawer ul li:hover {
+    color: #f39c12;
+  }
+  
+  .text-position {
+    text-align: left !important;
+    font-size: 16px !important;
+  }
+
+  .dis{
+    /* margin-top: 150px; */
+  }
+
+
+  @media (max-width: 500px){
+    .text-position {
+      text-align: center !important;
+    }
+    .dis{
+      margin-top: 10px;
+    }
+  }

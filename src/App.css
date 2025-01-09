@@ -1,0 +1,1065 @@
+.App {
+  text-align: center;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ::-webkit-scrollbar {
+  width: 5px;
+} */
+/* --------------------------------- */
+.CertificatModalButton {
+  border-radius: 5px !important;
+}
+/* ::-webkit-scrollbar-thumb {
+  width: 1em;
+  background-color: #ddd;
+  outline: 5px solid slategrey;
+  border-radius: 1rem;
+} */
+
+.fixingIssue {
+  position: fixed;
+  left: 50;
+  right: 50;
+}
+.imgMainDiv{
+  width: 100%;
+  height: 100%;
+}
+.svgImgGenerat{
+  width: 800px;
+}
+.chartContainer {
+  width: 100px;
+  height: 100px;
+  max-width: 120px;
+}
+.credits-button-mental {
+  border: none;
+  background-color: #bab1ce;
+  font-weight: 500;
+  padding-inline: 42px;
+  padding-block: 11px;
+  border-radius: 3px;
+}
+
+/* ANIMATE TIMER BUTTON */
+.animate-timer-button {
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+  color: white !important;
+  position: relative;
+  overflow: hidden;
+  transition: all .5s;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+  
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+
+
+@keyframes glowing {
+  0% {
+    background-color: rgb(58, 2, 118);
+    -webkit-box-shadow: 0 0 3px rgb(58, 15, 137);
+  }
+
+  50% {
+    background-color: rgb(58, 2, 118);
+    -webkit-box-shadow: 0 0 20px rgb(58, 15, 137);
+  }
+
+  100% {
+    background-color: rgb(58, 2, 118);
+    -webkit-box-shadow: 0 0 3px rgb(58, 15, 137);
+  }
+}
+
+.animate-timer-button span{
+  position: absolute;
+  display: block;
+}
+.animate-timer-button span:nth-child(1){
+  height: 3px;
+  width:200px;
+  top:0px;
+  left:-200px;
+  background: linear-gradient(to right, rgba(0,0,0,0), #380aad);
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span1 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes span1{
+  0%{
+      left:-200px
+  }
+  100%{
+      left:200px;
+  }
+}
+.animate-timer-button span:nth-child(2){
+  height: 70px;
+  width: 3px;
+  top:-70px;
+  right:0px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #380aad);
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span2 2s linear infinite;
+  animation-delay: 2s;
+}
+@keyframes span2{
+  0%{
+      top:-70px;
+  }
+  100%{
+      top:70px;
+  }
+}
+.animate-timer-button span:nth-child(3){
+  height:3px;
+  width:200px;
+  right:-200px;
+  bottom: 0px;
+  background: linear-gradient(to left, rgba(0,0,0,0), #380aad);
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  animation: span3 2s linear infinite;
+  animation-delay: 3s;
+}
+@keyframes span3{
+  0%{
+      right:-200px;
+  }
+  100%{
+      right: 200px;
+  }
+}
+
+.animate-timer-button span:nth-child(4){
+  height:70px;
+  width:3px;
+  bottom:-70px;
+  left:0px;
+  background: linear-gradient(to top, rgba(0,0,0,0), #380aad);
+  border-top-right-radius: 1px;
+  border-top-left-radius: 1px;
+  animation: span4 2s linear infinite;
+  animation-delay: 4s;
+}
+@keyframes span4{
+  0%{
+      bottom: -70px;
+  }
+  100%{
+      bottom:70px;
+  }
+}
+/* button animation end */
+
+.questionsFooter{
+  font-size: 12px;
+  color: #004c55;
+  font-weight: 500;
+}
+.close-icon-position {
+  position: absolute;
+  bottom: -30px;
+  left: 360px;
+  color: white;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.automint-img {
+  width: 20vw;
+}
+
+.dotted-border {
+  width: 20vw;
+  height: 140px;
+  border-radius: 5px;
+  border: 2px dotted #ccc;
+  display: inline-block;
+  flex-direction: column;
+}
+
+.dotted-border-another {
+  width: 20vw;
+  height: 100px;
+  border-radius: 5px;
+  border: 2px dotted #ccc;
+  display: inline-block;
+  flex-direction: column;
+}
+
+.parent {
+  height: 70vh !important;
+  overflow: "hidden";
+}
+
+.minimizeSpace {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.iconCloses {
+  padding: 1px !important;
+  background-color: red !important;
+  border: none !important;
+}
+
+.iconClose {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  background: none !important;
+  border: none !important;
+  font-size: 25px !important;
+}
+
+.banner-button2 {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #db1528 51%,
+    #ff512f 100%
+  );
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border: none;
+  font-weight: bold;
+
+  padding: 5px 20px;
+
+  border-radius: 10px;
+  font-weight: 500;
+  border: none;
+}
+
+.banner-button2:hover {
+  background-image: linear-gradient(
+    to right,
+    #db1528 0%,
+    #ff512f 51%,
+    #db1528 100%
+  );
+}
+
+.closeD {
+  text-align: right;
+}
+
+.mySwiper {
+  width: 100%;
+}
+
+.handleBannerImage {
+  width: 100%;
+  height: auto;
+}
+
+.vodiapicker {
+  display: none;
+}
+
+#a {
+  padding-left: 0px;
+}
+
+#a img,
+.btn-select img {
+  width: 12px;
+}
+
+#a li {
+  list-style: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#a li:hover {
+  background-color: #f4f3f3;
+}
+
+#a li img {
+  margin: 5px;
+}
+
+#a li span,
+.btn-select li span {
+  margin-left: 30px;
+}
+
+.ai-soon-title {
+  margin-top: -65px !important;
+  letter-spacing: 3px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* item list */
+
+.b {
+  display: none;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.open {
+  display: show !important;
+}
+
+.btn-select {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 350px;
+  height: 34px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.btn-select li {
+  list-style: none;
+  float: left;
+  padding-bottom: 0px;
+}
+
+.btn-select:hover li {
+  margin-left: 0px;
+}
+
+.btn-select:hover {
+  background-color: #f4f3f3;
+  border: 1px solid transparent;
+  box-shadow: inset 0 0px 0px 1px #ccc;
+}
+
+.btn-select:focus {
+  outline: none;
+}
+.nft-address {
+  font-size: 13px !important;
+}
+.mint-copy-btn {
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.lang-select {
+  margin-left: 50px;
+}
+
+.alignForEndCross {
+  text-align: end !important;
+  justify-self: end !important;
+}
+
+.headingTextColor {
+  background: linear-gradient(to right, #1081e8 0%, #f32177 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ------------------------------------- */
+.button-Payment {
+  align-items: center;
+  background: #095e68;
+  border: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 15px !important;
+  font-weight: 450;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 300px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 27px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.button-Payment:hover,
+.button-Payment:focus {
+  background-color: #004c55;
+  color: #ffffff;
+}
+
+.button-Payment:active {
+  background-color: #004c55;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.button-Payment:disabled {
+  cursor: not-allowed;
+  background: #00292e;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------------------------- */
+.button-Payment-Menu {
+  align-items: center;
+  background: #095e68;
+  border: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 12px !important;
+  font-weight: 350;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 300px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  padding-right: 10px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.button-Payment-Menu:hover,
+.button-Payment-Menu:focus {
+  background-color: #004c55;
+  color: #ffffff;
+}
+
+.button-Payment-Menu:active {
+  background-color: #004c55;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.button-Payment-Menu:disabled {
+  cursor: not-allowed;
+  background: #00292e;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* ----------------------------------------- */
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  text-transform: none;
+}
+
+.forPositionNotFound {
+  position: relative !important;
+  top: -12% !important;
+}
+
+.forMarginLess {
+  margin-top: -80px;
+}
+
+.notFoundHome {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  z-index: 10000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+
+.notFoundHome:hover {
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
+}
+
+.notFoundHome:active {
+  position: relative;
+  top: 1px;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  text-transform: none;
+}
+
+.loaders {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #db3450;
+  /* Blue */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+.wait {
+  color: #ff343f;
+  margin-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.wait span {
+  color: #fff;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  text-transform: none;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  text-transform: none;
+}
+
+::placeholder {
+  /* Recent browsers */
+  text-transform: none;
+}
+
+/* wallet modal */
+.titleWallet {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.alertWalletDiv {
+  margin-top: -2.5rem;
+}
+
+.walletIcon {
+  width: 40px;
+}
+
+.contents {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #a2a2a2;
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+.contentDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.walletDiv span {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.walletDiv {
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  padding-top: 26px;
+  color: #a2a2a2;
+  font-family: Montserrat;
+  font-weight: bold;
+  background-color: #060c13 !important;
+  box-shadow: 1px 2px 2px -2px #000000;
+  transition: transform 8s ease-in;
+}
+
+.walletDiv:hover {
+  box-shadow: 0px 1px 2px 1px #000000;
+  padding-bottom: 1px;
+  transition: transform 8s ease-in;
+}
+
+.closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.imgWallet {
+  width: 50px !important;
+  margin: 0 auto;
+}
+
+.swal-text {
+  font-weight: 300 !important;
+}
+
+.fiat-modal {
+  background-color: #331e38 !important;
+  /* padding: 50px; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* width: 150% !important; */
+}
+.dialogWallet {
+  background-color: #060c13;
+  color: white;
+}
+
+.automint-text {
+  /* text-decoration: underline !important; */
+  border-bottom: 1.8px solid rgb(139, 6, 6);
+}
+
+.dialogDiv-coinbase {
+  background-color: #060c13;
+  color: white;
+  /* width: 100% !important; */
+  /* margin-left: 100px !important;
+  margin-right: 100px !important; */
+}
+
+.coinbase-dialog {
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+}
+
+.coin-btn {
+  font-size: 8px;
+}
+
+.dialogDiv {
+  border-radius: 20px;
+  z-index: 5000 !important;
+}
+
+.wallet-texts {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 16px !important;
+}
+
+/* .walletName {
+  font-size: 1rem;
+  color: #a2a2a2;
+  text-align: center;
+} */
+
+.walletFont {
+  margin-right: 6px;
+}
+
+.contents1 {
+  color: #a2a2a2;
+  text-decoration: none;
+}
+
+.contents1:hover {
+  color: #fff;
+}
+
+/* .forTestColor {
+  background-color: #6f00ff96;
+  color: white;
+} */
+
+.walletdiv {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+/* --------------------------------- */
+.swal-overlay--show-modal .swal-modal {
+  background: rgb(29, 34, 35) !important;
+  color: white !important;
+}
+
+.swal-title {
+  color: #cecece;
+}
+
+button.swal-button.swal-button--confirm {
+  background: cadetblue;
+}
+
+.swal-footer {
+  text-align: center;
+}
+
+.swal-modal {
+  background: rgb(29, 34, 35) !important;
+}
+
+.swal-icon--success:after {
+  background: none !important;
+}
+
+.swal-icon--success:before {
+  background: none !important;
+}
+
+.swal-icon--success__hide-corners {
+  background: none !important;
+}
+
+.swal-text {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* wallet modal end */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+::selection {
+  background-color: #4ac5d1;
+  color: #fff;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 10px 1.5rem;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.copyInputField {
+  width: 71%;
+}
+
+.copyIconButton {
+  width: 4%;
+}
+
+@media screen and (max-width: 1080px) {
+  .copyInputField {
+    width: 68%;
+  }
+
+  .handleBannerImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .copyIconButton {
+    width: 7%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  #certificatModal {
+    width: 80% !important;
+  }
+  .play-video-modal {
+    width: 260px !important;
+    height: 260px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .automint-img {
+    width: 94.5vw;
+  }
+
+  .dotted-border-another {
+    width: 94.5vw;
+  }
+
+  .dotted-border {
+    width: 95vw;
+  }
+
+  .widthforSm {
+    width: 75%;
+    margin-left: 50px;
+  }
+
+  .handleAlignSmTrans {
+    margin-left: 10px !important;
+  }
+
+  .handleMargin {
+    margin-left: -10px;
+    margin-top: -20px;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    padding: 10px 1rem;
+  }
+
+  .slider-btn {
+    padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .copyInputField {
+    width: 65%;
+  }
+
+  .copyIconButton {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 367px) {
+  .copyInputField {
+    width: 62%;
+  }
+
+  .copyIconButton {
+    width: 13%;
+  }
+}
+
+.team_list th,
+.team_list td {
+  border-bottom: 1px solid #ececec;
+  padding: 8px 15px 8px 0px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .forHideSm {
+    display: none;
+  }
+
+  .handleVideoNotFound {
+    width: 320px !important;
+    height: 240px !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .team_list tr {
+    border-bottom: 1px solid #ececec;
+    padding: 8px 15px 8px 0px;
+  }
+
+  .minimizeSpace {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .handleBannerImage {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .heightHanlde {
+    height: auto !important;
+  }
+
+  .handlingPhoneReduce {
+    font-size: small;
+  }
+
+  .forPositionNotFound {
+    position: relative;
+    top: -5%;
+  }
+
+  /* #b6b6b6 */
+
+  .forMarginLess {
+    margin-top: -40px;
+  }
+
+  .team_list th,
+  .team_list td {
+    border: none;
+    display: table-row;
+  }
+
+  /* .team_list th:nth-child(4), */
+  .team_list th:nth-child(5),
+  /* .team_list td:nth-child(4), */
+  .team_list td:nth-child(5) {
+    display: table-cell;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .wallet-texts {
+    font-size: 13.5px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .secure-arbitrage {
+  position: absolute; 
+  top: -50px; 
+  left: 85px;
+  color: #fff;
+  margin: 0;
+  padding: 0; 
+  font-size: 16px; 
+  font-weight: bold; 
+  font-family: 'Segoe UI', sans-serif;
+  
+}
+.container-bot {
+  position: relative; 
+}
+
+
+.full-screen-modal .modal-dialog {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.full-screen-modal .modal-content {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+
+
+.table-body-text-color {
+  color: white !important;
+}
+
+
+.secureArbitrage-font {
+  font-family: 'Segoe UI', sans-serif;
+} */

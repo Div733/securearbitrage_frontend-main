@@ -1,0 +1,198 @@
+/* .secure-heading {
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    background: url('./secure.png') no-repeat center center; 
+    background-size: cover;
+    border-radius: 0px; 
+    opacity: 0.9;
+    overflow: hidden;
+    height: 250px;
+    flex-direction: column; 
+  } */
+  .secure-heading {
+    position: relative;
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    color: white; /* Text color on the background image */
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    /* background: url('./secure.png') no-repeat top center;  */
+    background-size: cover;
+    border-radius: 0px; /* No rounded corners */
+    opacity: 0.9; /* Slight transparency for the background */
+    overflow: hidden;
+    height: 100px; /* Adjusted height */
+    flex-direction: column; /* Stack text and paragraph vertically */
+}
+
+  
+  .secure-heading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+    z-index: 1;
+  }
+  
+  .secure-heading span {
+    position: relative;
+    z-index: 2; /* Ensure text is above the overlay */
+  }
+
+
+  .secure-body-background {
+    background: linear-gradient(45deg, #3360A2, #2E292D, #2A252D, #414E55);
+    text-align: left;
+    color: white;
+    min-height: 100vh; 
+  }
+  .secure-body-background2 {
+    background: #404d54;
+    text-align: left;
+    color: white;
+    min-height: 100vh; 
+  }
+
+
+
+  .custom-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+  }
+  
+  .custom-list > li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .custom-list > li::before {
+    /* content: counter(step-counter) ". ";  */
+    /* counter-increment: step-counter; Increment the counter */
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .custom-list ul {
+    list-style: none; /* Remove nested bullet points */
+    padding-left: 20px; /* Indent nested items */
+  }
+  
+  .custom-list ul > li::before {
+    content: "- "; /* Add a dash for nested items */
+    font-weight: normal;
+  }
+
+
+
+
+  /* accordian colgroup */
+  
+  .accordion-button {
+    background: linear-gradient(135deg, #354F55, #456067, #304468);
+    color: #fff; /* Make the text color white for contrast */
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #304468, #456067, #354F55); /* You can reverse the gradient when expanded */
+}
+
+.accordion-item {
+    border: none; /* Optional: Remove border if you want */
+}
+
+.accordion-collapse {
+    background: #f8f9fa; /* Keep the body background light for content readability */
+}
+
+.accordion-body {
+    background:  #F5F5F5; /* Light background for the body content */
+}
+
+
+.custom-swal-popup {
+  font-size: 10px; /* Text size to 12px */
+}
+
+
+
+
+
+
+
+
+
+.secure-arbitrage {
+  position: absolute; 
+  top: -50px; 
+  /* left: calc(100% + 40px);  */
+  left: 85px;
+  color: #fff;
+  margin: 0;
+  padding: 0; 
+  font-size: 16px; 
+  font-weight: bold; 
+  font-family: 'Segoe UI', sans-serif;
+  /* z-index: 800;  */
+}
+.container-bot {
+  position: relative; /* Makes the container the reference for absolute positioning */
+}
+
+
+.full-screen-modal .modal-dialog {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.full-screen-modal .modal-content {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+
+
+.table-body-text-color {
+  color: white !important;
+}
+
+
+.secureArbitrage-font {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+  .secure-heading{
+    height: 100px !important;
+  }
+}
